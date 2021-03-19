@@ -25,7 +25,8 @@
     font: inherit;
     margin: auto;
   }
-  input#citizenship,
+  input#citizenship_back,
+  input#citizenship_front,
   input#photo{
     display: none;
   }
@@ -73,27 +74,30 @@
     color: #fa923f;
   }
   .file-area{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* margin-bottom: 50px; */
     display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
   form{
     width: 100%;
     height: 60%;
+    
   }
   .form-area{
     display: flex;
     flex-direction: column;
     width: 50%;
     align-items: center;
-    height: 80vh;
     border-style: solid;
-    border-color: black;
+    border-color:black;
     border-width: 2px;
     border-radius: 10px;
+    margin:100px;
   }
   .message-area{
     height: 80px;
@@ -101,12 +105,15 @@
     display: block;
   }
   .heading{
-    margin-top: 30px;
-    height: 150px;
+    margin-top:100px;
+    height: 70px;
     width: 100%;
     text-align: center;
     font-size: 50px;
-    border-style: none none dashed none
+    border-style: none none dashed none;
+    text-align: center;
+    color: #fa923f;
+    border-color:black;
   }
 
   .loader,
@@ -172,6 +179,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;  
+    margin-top: 10px;
   }
   .image-name{
     text-align: center;
@@ -184,7 +192,13 @@
     background-color:#fa923f;
     text-align: center;
     /* border-bottom-style: hidden; */
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
+    /* border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px; */
   }
-  
+  .details{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    margin:5px 10px;
+  }
